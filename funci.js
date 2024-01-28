@@ -30,5 +30,4 @@ const Orders = [
         paymentStatus: '07:45:00',
         status: '16:58:05'
     },
-    // Adicione mais objetos de pedido conforme necessário
 ];
