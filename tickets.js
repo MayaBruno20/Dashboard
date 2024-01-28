@@ -1,11 +1,7 @@
-// Código JavaScript para a Seção de Caixa de E-mails
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Simulação de dados de e-mails (pode ser substituído por dados reais ou dinâmicos)
     const emails = [
         { subject: "E-mail Teste 1", sender: "Bruno.Maia@prseg.com.br", content: "Conteúdo do e-mail 1..." },
         { subject: "E-mail Teste 2", sender: "Suporte@prseg.com.br", content: "Conteúdo do e-mail 2..." },
-        // Adicione mais e-mails conforme necessário
     ];
 
     // Função para exibir e-mails na caixa de e-mails
@@ -30,4 +26,3 @@ document.addEventListener("DOMContentLoaded", function () {
     renderEmails();
 });
 
-// Adicione mais lógica JavaScript conforme necessário para tornar a seção de e-mails interativa.
