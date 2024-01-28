@@ -126,7 +126,6 @@
                             <option value="pt">Português</option>
                             <option value="en">English</option>
                             <option value="es">Español</option>
-                            <!-- Add more language options as needed -->
                         </select>
                     </div>
                     <div>
@@ -134,7 +133,6 @@
                         <select id="timezone" name="timezone">
                             <option value="utc">UTC</option>
                             <option value="gmt">GMT</option>
-                            <!-- Add more timezone options as needed -->
                         </select>
                     </div>
                     <button type="submit">Salvar</button>
@@ -164,7 +162,6 @@
                 </form>
             </div>
             <div id="integration-box" class="additional-box" style="display: none;">
-                <!-- Content for "Languages" box -->
                 <form>
                     <label for="apiKey">Chave da API:</label>
                     <input type="text" id="apiKey" name="apiKey" placeholder="Insira sua chave da API">
@@ -182,8 +179,6 @@
         
                 <div id="permissions-management">
                     <h3>Gerenciamento de Permissões</h3>
-        
-                    <!-- Lista de permissões com opções de remoção -->
                     <ul>
                         <li>
                             <span>Leitura</span>
@@ -224,7 +219,6 @@
             </div>
             
             <div id="acessi-box" class="additional-box" style="display: none;">
-                <!-- Content for "Languages" box -->
                 <form id="accessibility-form">
                     <label for="font-size">Tamanho da Fonte:</label>
                     <select id="font-size" name="font-size">
@@ -426,12 +420,10 @@
                 const apiKey = document.querySelector('#apiKey').value;
                 const selectedPermission = document.querySelector('#permissions').value;
     
-                // Salve suas configurações (simulação)
                 console.log('Configurações salvas:');
                 console.log('Chave da API:', apiKey);
                 console.log('Permissão:', selectedPermission);
-    
-                // Adicione a permissão à lista de gerenciamento
+        
                 addPermissionToList(selectedPermission);
             });
     
@@ -443,11 +435,9 @@
                 `;
     
                 permissionsManagement.appendChild(listItem);
-    
-                // Adicione um ouvinte de evento para o botão de revogação
+
                 const revokeButton = listItem.querySelector('.revoke-permission');
                 revokeButton.addEventListener('click', function () {
-                    // Remova a permissão da lista (simulação)
                     console.log('Permissão revogada:', permission);
                     listItem.remove();
                 });
