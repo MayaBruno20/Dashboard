@@ -7,8 +7,6 @@
     <link rel="shortcut icon" type="imagex/png" href="Imagens/1_PR-SEG_preferencial.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
-
-
     <title>Dashboard</title>
 </head>
 
@@ -338,11 +336,8 @@
     
             // Verificar se ambos os campos foram preenchidos
             if (reminderText && reminderTime) {
-                // Crie um novo elemento de lembrete
                 const newReminder = document.createElement('div');
                 newReminder.classList.add('notification');
-    
-                // Adicione o conteúdo do lembrete com texto e horário
                 newReminder.innerHTML = `
                     <div class="icon">
                         <span class="material-icons-sharp">
