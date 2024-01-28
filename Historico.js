@@ -72,5 +72,4 @@ const Orders = [
         paymentStatus: 'Paid',
         status: 'Active'
     },  
-    // Adicione mais objetos de pedido conforme necessário
 ];
