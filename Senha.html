@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/1_PR-SEG_preferencial.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="Senha.css">
+    <title>Segurança</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="gradient-section">
+            <div class="gradient"></div>
+            <div class="gradient-content">
+                <h1 class="heading">Bem Vindo a Central de <span>Suporte!</span></h1>
+                <p class="paragraph">Informe os dados necessários para redefinir sua senha.</p>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Redefinir Senha</h2>
+            <p>Defina uma senha segura para ter acesso ao Dashboard Pr Seg.</p>
+            <form>
+                <div class="form-group">
+                    <label for="to">E-mail:</label>
+                    <input type="text" id="to" name="to" required autocomplete="off" placeholder="Exemplo@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Nova Senha:</label>
+                    <input type="text" id="subject" name="subject" required autocomplete="off">
+                </div>
+                <div class="form-group result-container">
+                    <p class="result">Email Enviado com sucesso!</p>
+                    <button type="button" class="send-btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</body>
+
+</html>

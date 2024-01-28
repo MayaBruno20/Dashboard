@@ -1,0 +1,338 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="imagex/png" href="Imagens/1_PR-SEG_preferencial.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+        <link rel="stylesheet" href="Interno.css">
+
+        <title>Interno</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <!-- Sidebar Section -->
+            <aside>
+                <div class="toggle">
+                    <div class="logo">
+                        <img src="Imagens/1_PR-SEG_preferencial.png">
+                        <h2>PR<span class="danger">Seg</span></h2>
+                    </div>
+                    <div class="close" id="close-btn">
+                        <span class="material-icons-sharp">
+                            close
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <a href="Dashboard.html">
+                        <span class="material-icons-sharp">
+                            dashboard
+                        </span>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="Usuarios.html">
+                        <span class="material-icons-sharp">
+                            person_outline
+                        </span>
+                        <h3>Usuarios</h3>
+                    </a>
+                    <a href="Historico.html">
+                        <span class="material-icons-sharp">
+                            receipt_long
+                        </span>
+                        <h3>Historico</h3>
+                    </a>
+                    <a href="Analytics.html">
+                        <span class="material-icons-sharp">
+                            insights
+                        </span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a href="Tickets.html">
+                        <span class="material-icons-sharp">
+                            mail_outline
+                        </span>
+                        <h3>Tickets</h3>
+                        <span class="message-count">0</span>
+                    </a>
+                    <a href="Vendas.html">
+                        <span class="material-icons-sharp">
+                            inventory
+                        </span>
+                        <h3>Vendas</h3>
+                    </a>
+                    <a href="Relatorios.html">
+                        <span class="material-icons-sharp">
+                            report_gmailerrorred
+                        </span>
+                        <h3>Relatórios</h3>
+                    </a>
+                    <a href="Configuracoes.html">
+                        <span class="material-icons-sharp">
+                            settings
+                        </span>
+                        <h3>Configurações</h3>
+                    </a>
+                    <a href="Interno.html"  class="active">
+                        <span class="material-icons-sharp">
+                            contact_support
+                        </span>
+                        <h3>Interno</h3>
+                    </a>
+                    <a href="Index.html">
+                        <span class="material-icons-sharp">
+                            logout
+                        </span>
+                        <h3>Sair</h3>
+                    </a>
+                </div>
+            </aside>
+            <!-- End of Sidebar Section -->
+
+            <!-- Main Content -->
+            <main>
+                <h1>Interno</h1>
+                <div class="folders">
+                    <div class="creatives">
+                        <div class="status">
+                            <div class="info">
+                                <h2 onclick="openFolder(this)">Criativos</h2>
+                                <div class="folder-links">
+                                    <a href="https://drive.google.com/drive/folders/1XZ5t3UfXYhKxQESCPiQK2xGwg-KIxxyD?usp=drive_link" target="_blank">Informativo</a>
+                                    <a href="https://drive.google.com/drive/folders/1dAt9UXnM03WLuKfzO3Xw0QFH2C89JUai?usp=sharing" target="_blank">Material Antigo</a>
+                                    <a href="https://drive.google.com/drive/folders/1T3-5Mk1lDYnyHY0ebiytPJFiswIasR_d?usp=drive_link" target="_blank">Seguros</a>
+                                </div>
+                            </div>
+                            <div class="circleBtn">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="addBtn">
+                                    <h1>+</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backup">
+                        <div class="status">
+                            <div class="info">
+                                <h2 onclick="openFolder(this)">Backup</h2>
+                                <div class="folder-links">
+                                    <a href="https://drive.google.com/drive/folders/1vTkj_FW4RyE74zTBz98Xtof3YQN1K22e?usp=drive_link" target="_blank">Janeiro/2024</a>
+                                    <a href="https://drive.google.com/drive/folders/1-z0CjxWtomKXWU0i2qQ1nS0RJamS-qeF?usp=drive_link" target="_blank">Dezembro/2023</a>
+                                </div>
+                            </div>
+                            <div class="circleBtn">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="addBtn">
+                                    <h1>+</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="requests">
+                        <div class="status">
+                            <div class="info">
+                                <h2 onclick="openFolder(this)">Solicitações</h2>
+                                <div class="folder-links">
+                                    <a href=mailto:marketing@prseg.com.br?subject=Criativo>Backup</a>
+                                    <a href=mailto:suporte@prseg.com.br?subject=Backup>Criativos</a>
+                                    <a href=mailto:suporte@prseg.com.br?subject=Suporte>Suporte</a>
+                                </div>
+                            </div>
+                            <div class="circleBtn">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="addBtn">
+                                    <h1>+</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one-half column">
+                        <div class="links-list">
+                            <h1>Ponto Digital</h1>
+                            <div id="registerForm">
+                                <label for="employeeName">Nome do Funcionário:</label>
+                                <select id="employeeName" required>
+                                    <option value="Bruno Maia">Bruno Maia</option>
+                                    <option value="Gabrielle Dupim">Gabrielle Dupim</option>
+                                    <option value="Igor Pinheiro">Igor Pinheiro</option>
+                                    <option value="Lucas Aielo">Lucas Aielo</option>
+                                    <option value="Matheus Rocha">Matheus Rocha</option>
+                                </select>
+                                    
+                                <button onclick="registerAttendance()">Registrar Ponto</button>
+                            </div>
+                        </div>    
+                    </div>
+                        
+                    <div id="attendanceLog">
+                        <div class="one-half column">
+                            <div class="links-list">
+                                <h2>Registro de Ponto</h2>
+                                <font color="#ccc"><ul id="logList"></ul></font>
+                                <ul id="logList" style="color: #ccc;"></ul>
+                                <button onclick="clearAttendanceLog()">Limpar Registros</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+   
+                <div id="manageProfile-box" class="additional-box" style="display: none;">
+                    <!-- Content for "Manage Profile" box -->
+                    <form id="profile-form">
+
+                        <button type="submit">Salvar</button>
+                        <button type="button" class="close-box">Fechar</button>
+                    </form> 
+                </div>
+                <div id="languages-box" class="additional-box" style="display: none;">
+                    <form>
+                        
+                        <button type="submit">Salvar</button>
+                        <button type="button" class="close-box">Fechar</button>
+                    </form>
+                </div>
+                <div id="notification-box" class="additional-box" style="display: none;">
+                    <form id="notification-form">
+                          
+                        <button type="submit">Salvar Configurações</button>
+                        <button type="button" class="close-box">Fechar</button>
+                    </form>
+                </div>
+            </main>
+            <!-- End of Main Content -->
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="nav">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">
+                            menu
+                        </span>
+                    </button>
+                    <div class="dark-mode">
+                        <span class="material-icons-sharp active">
+                            light_mode
+                        </span>
+                        <span class="material-icons-sharp">
+                            dark_mode
+                        </span>
+                    </div>
+
+                    <div class="profile">
+                        <div class="info">
+                            <p>Olá, <b>Bruno</b></p>
+                            <small class="text-muted">Admin</small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="Imagens/361350828_821246702820575_4265328400129953631_n.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Nav -->
+
+                <div class="options">
+                    <div class="header">
+                        <h1>Seções (Atualizando)</h1>
+                        <span class="material-icons-sharp toggle-btn" onclick="toggleSettings()">
+                            tune
+                        </span>
+                    </div>
+                
+                    <div class="settings-content" style="display: none;">
+                        <div class="notification">
+                            <div class="icon">
+                                <span  id="manageProfile"  class="material-icons-sharp">
+                                    edit
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="info">
+                                    <h3>Gerenciar Perfil</h3>
+                                    <small class="text_muted">
+                                        Editar
+                                    </small>
+                                </div>
+                                <span id="manageProfile" class="material-icons-sharp">
+                                    add
+                                </span>
+                            </div>
+                        </div>
+                
+                        <div class="notification deactive">
+                            <div class="icon" id="langua">
+                                <span id="languages" class="material-icons-sharp">
+                                    language
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="info">
+                                    <h3>Idiomas e Região</h3>
+                                    <small class="text_muted">
+                                        Editar
+                                    </small>
+                                </div>
+                                <span id="languages" class="material-icons-sharp">
+                                    add
+                                </span>
+                            </div>
+                        </div>
+                
+                        <div class="notification deactive">
+                            <div class="icon" id="vol">
+                                <span id="notification" class="material-icons-sharp">
+                                    volume_up
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="info">
+                                    <h3>Notificações</h3>
+                                    <small class="text_muted">
+                                        Editar
+                                    </small>
+                                </div>
+                                <span id="notification" class="material-icons-sharp">
+                                    add
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Adicione quantos botões de configurações extras desejar -->
+                    </div>
+                </div>
+        </div>
+        <script src="Box.js"></script>
+        <script src="Ponto.js"></script>
+        <script src="Links.js"></script>
+        <script src="Index.js"></script>
+        <script>
+            function clearAttendanceLog() {
+                // Limpar registros no armazenamento local
+                localStorage.removeItem('attendanceRecords');
+
+                // Atualizar a exibição do registro de ponto
+                displayAttendanceLog();
+            }
+        </script>
+        <script>
+            function toggleSettings() {
+                var settingsContent = document.querySelector('.settings-content');
+                settingsContent.style.display = (settingsContent.style.display === 'none' || settingsContent.style.display === '') ? 'block' : 'none';
+            }
+        </script>
+        
+    </body>
+    </html>

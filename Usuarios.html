@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/1_PR-SEG_preferencial.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Analytics</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="Imagens/1_PR-SEG_preferencial.png">
+                    <h2>PR<span class="danger">Seg</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dashboard.html">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="Usuarios.html" class="active">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Usuarios</h3>
+                </a>
+                <a href="Historico.html">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Historico</h3>
+                </a>
+                <a href="Analytics.html">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="Tickets.html">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">0</span>
+                </a>
+                <a href="Vendas.html">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Vendas</h3>
+                </a>
+                <a href="Relatorios.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Relatórios</h3>
+                </a>
+                <a href="Configuracoes.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="Interno.html">
+                    <span class="material-icons-sharp">
+                        contact_support
+                    </span>
+                    <h3>Interno</h3>
+                </a>
+                <a href="Index.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <!-- New Users Section -->
+            
+            <div class="new-users">
+                <h2>Novos Usuários</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="Imagens/207432005_442887680868084_6013891077446347939_n.jpg">
+                        <h2>Igor</h2>
+                        <p>Offline</p>
+                    </div>
+                    <div class="user">
+                        <img src="Imagens/328068143_968576754582630_4261093779713603218_n.jpg">
+                        <h2>Gabrielle</h2>
+                        <p>Offline</p>
+                    </div>
+                    <div class="user">
+                        <img src="Imagens/Captura de tela 2023-10-06 131926.png">
+                        <h2>Lucas</h2>
+                        <p>Offline</p>
+                    </div>
+                    <div class="user">
+                        <img src="Imagens/Captura de tela 2023-10-06 131926.png">
+                        <h2>Matheus</h2>
+                        <p>Offline</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of New Users Section -->
+            <div class="customer-registration">
+                <h2>Cadastro de Clientes</h2>
+                <form id="customerForm">
+                    <!-- Informações Pessoais -->
+                    <h3>Informações Pessoais</h3>
+                    <label for="customerName">Nome:</label>
+                    <input type="text" id="customerName" name="customerName" required>
+        
+                    <label for="customerEmail">E-mail:</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+        
+                    <label for="customerPhone">Telefone:</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                    <div id="addApoModal" class="additional-box">
+                        <!-- Histórico de Seguros Anteriores -->
+                        <h3>Histórico de Seguros Anteriores</h3>
+                        <label for="previousInsurance">Seguro Anterior:</label>
+                        <input type="text" id="previousInsurance" name="previousInsurance">
+        
+                        <!-- Preferências -->
+                        <h3>Preferências</h3>
+                        <label for="customerPreferences">Preferências:</label>
+                        <textarea id="customerPreferences" name="customerPreferences"></textarea>
+        
+                        <!-- Detalhes de Contato -->
+                        <h3>Detalhes de Contato</h3>
+                        <label for="contactMethod">Método de Contato Preferido:</label>
+                        <select id="contactMethod" name="contactMethod">
+                            <option value="email">E-mail</option>
+                            <option value="phone">Telefone</option>
+                            <option value="both">Ambos</option>
+                        </select>
+        
+                        <label for="additionalNotes">Observações Adicionais:</label>
+                        <textarea id="additionalNotes" name="additionalNotes"></textarea>
+        
+                        <!-- Botão de Envio -->
+                        <button type="button" onclick="submitCustomerForm()">Cadastrar Cliente</button>
+                    </div>
+
+                    <div class="apoBox" id="addApoButton" onclick="showApoModal()">
+                        <div>
+                            <h3>Mais Informações</h3>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <button id="popup-btn">Abrir Configurações</button>
+                        <p>Olá, <b>Bruno</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    
+                    <div class="profile-photo">
+                        <img src="Imagens/361350828_821246702820575_4265328400129953631_n.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="Imagens/361350828_821246702820575_4265328400129953631_n.jpg">
+                    <h2>Bruno Maia</h2>
+                    <p>Desenvolvedor FullStack</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Lembretes</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Reunião</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                13:00 PM - 15:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div id="addReminderModal" class="additional-box">
+                    <p>Adicionar Lembrete</p>
+                    <form>
+                        <label for="reminderText">Texto do Lembrete:</label>
+                        <input type="text" id="reminderText" required>
+                
+                        <label for="reminderTime">Horário do Lembrete:</label>
+                        <input type="text" id="reminderTime"  required>
+                
+                        <button type="button" onclick="addReminder()">Adicionar</button>
+                        <button class="close-box" type="button" onclick="closeReminderModal()">Fechar</button>
+                    </form>
+                </div>
+
+                <div class="notification add-reminder" id="addReminderButton" onclick="showReminderModal()">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Adicionar Lembrete</h3>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <script src="Index.js"></script>
+    <script>
+        // Função para exibir a caixa de adição de lembretes
+        function showReminderModal() {
+            const modal = document.getElementById('addReminderModal');
+            modal.style.display = 'block';
+        }
+    
+        // Função para fechar a caixa de adição de lembretes
+        function closeReminderModal() {
+            const modal = document.getElementById('addReminderModal');
+            modal.style.display = 'none';
+        }
+    
+        // Função para adicionar lembrete
+        function addReminder() {
+            // Obter o texto e o horário do lembrete
+            const reminderText = document.getElementById('reminderText').value;
+            const reminderTime = document.getElementById('reminderTime').value;
+    
+            // Verificar se ambos os campos foram preenchidos
+            if (reminderText && reminderTime) {
+                // Crie um novo elemento de lembrete
+                const newReminder = document.createElement('div');
+                newReminder.classList.add('notification');
+    
+                // Adicione o conteúdo do lembrete com texto e horário
+                newReminder.innerHTML = `
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            alarm
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>${reminderText}</h3>
+                            <small class="text-muted">
+                                ${reminderTime}
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                `;
+    
+                // Adicione o novo lembrete à lista de lembretes
+                const remindersContainer = document.querySelector('.right-section .reminders');
+                remindersContainer.insertBefore(newReminder, document.getElementById('addReminderButton'));
+    
+                // Feche a caixa de adição de lembretes
+                closeReminderModal();
+            } else {
+                alert('Por favor, preencha ambos os campos.');
+            }
+        }
+
+    </script>
+    <script>
+        // Função para exibir a caixa de adição de lembretes
+        function showApoModal() {
+            const modal = document.getElementById('addApoModal');
+            modal.style.display = 'block';
+        }
+    
+        // Função para fechar a caixa de adição de lembretes
+        function closeApoModal() {
+            const modal = document.getElementById('addApoModal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

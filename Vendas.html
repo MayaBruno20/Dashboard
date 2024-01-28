@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/1_PR-SEG_preferencial.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="Vendas.css">
+
+    <title>Vendas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="Imagens/1_PR-SEG_preferencial.png">
+                    <h2>PR<span class="danger">Seg</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dashboard.html">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="Usuarios.html">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Usuarios</h3>
+                </a>
+                <a href="Historico.html">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Historico</h3>
+                </a>
+                <a href="Analytics.html">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="Tickets.html">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">0</span>
+                </a>
+                <a href="Vendas.html"   class="active">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Vendas</h3>
+                </a>
+                <a href="Relatorios.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Relatórios</h3>
+                </a>
+                <a href="Configuracoes.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="Interno.html">
+                    <span class="material-icons-sharp">
+                        contact_support
+                    </span>
+                    <h3>Interno</h3>
+                </a>
+                <a href="Index.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <!-- Adicionar Apólice Formulário -->
+            <h1>Setor de Vendas</h1>
+            <div class="add-policy">
+                <h2>Adicionar Apólice</h2>
+                <form id="policy-form">
+                    <label for="policy-number">Número da Apólice:</label>
+                    <input type="text" id="policy-number" name="policy-number" required>
+        
+                    <label for="policy-holder">Titular da Apólice:</label>
+                    <input type="text" id="policy-holder" name="policy-holder" required>
+        
+                    <label for="coverage">Cobertura:</label>
+                    <input type="text" id="coverage" name="coverage" required>
+        
+                    <label for="premium">Prêmio:</label>
+                    <input type="text" id="premium" name="premium" required>
+        
+                    <button type="button" onclick="addPolicy()">Adicionar Apólice</button>
+                </form>
+            </div>
+        
+            <!-- Lista de Apólices -->
+            
+            <div class="policy-list">
+                <h2>Lista de Apólices</h2>
+                <ul id="policy-list">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Pesquisar...">
+                        <button id="search-button" onclick="performSearch()">
+                            <span class="material-icons-sharp">search</span>
+                        </button>
+                    </div>
+                    <!-- A lista de apólices será preenchida dinamicamente aqui -->
+                </ul>
+            </div>
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Bruno</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="Imagens/361350828_821246702820575_4265328400129953631_n.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="cont">
+                <!-- End of Sidebar Section -->
+                <div class="sectionone">
+                    <div class="boxdialog">
+                        <div class="header">
+                            <h2>Filtros</h2>
+                            <span class="material-icons-sharp">
+                                checklist
+                            </span>
+                        </div>
+
+                        <div class="boxenter">
+                            <div class="icon">
+                                <span class="material-icons-sharp">
+                                    all_inbox
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="info">
+                                    <h3>Renovação</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="boxenter deactive">
+                            <div class="icon">
+                                <span class="material-icons-sharp">
+                                    send
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="info">
+                                    <h3>Em Processo</h3>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="boxenter archive">
+                            <div class="icon">
+                                <span class="material-icons-sharp">
+                                    archive
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="info">
+                                    <h3>Finalizados</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="boxenter delete">
+                            <div class="icon">
+                                <span class="material-icons-sharp">
+                                    delete
+                                </span>
+                            </div>
+                            <div class="content">
+                                <div class="info">
+                                    <h3>Sinistro</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    function addPolicy() {
+        // Obter os valores do formulário
+        var policyNumber = document.getElementById('policy-number').value;
+        var policyHolder = document.getElementById('policy-holder').value;
+        var coverage = document.getElementById('coverage').value;
+        var premium = document.getElementById('premium').value;
+
+        // Criar um novo elemento de lista
+        var listItem = document.createElement('li');
+        listItem.textContent = `Apólice #${policyNumber} - Titular: ${policyHolder} - Cobertura: ${coverage} - Prêmio: ${premium}`;
+
+        // Adicionar à lista
+        document.getElementById('policy-list').appendChild(listItem);
+
+        // Limpar o formulário
+        document.getElementById('policy-form').reset();
+    }
+</script>
+    <script src="Index.js"></script>
+</body>
+</html>

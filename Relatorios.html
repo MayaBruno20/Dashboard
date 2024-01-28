@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/1_PR-SEG_preferencial.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="Relatorios.css">
+
+    <title>Configurações</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="Imagens/1_PR-SEG_preferencial.png">
+                    <h2>PR<span class="danger">Seg</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dashboard.html">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="Usuarios.html">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Usuarios</h3>
+                </a>
+                <a href="Historico.html">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Historico</h3>
+                </a>
+                <a href="Analytics.html">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="Tickets.html">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">0</span>
+                </a>
+                <a href="Vendas.html">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Vendas</h3>
+                </a>
+                <a href="Relatorios.html"  class="active">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Relatórios</h3>
+                </a>
+                <a href="Configuracoes.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="Interno.html">
+                    <span class="material-icons-sharp">
+                        contact_support
+                    </span>
+                    <h3>Interno</h3>
+                </a>
+                <a href="Index.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Relatórios</h1>
+            
+            <div id="manageProfile-box" class="additional-box" style="display: none;">
+                <!-- Content for "Manage Profile" box -->
+                <form>
+
+                    <button type="submit">Salvar</button>
+                    <button type="button" class="close-box">Fechar</button>
+                </form>
+            </div>
+
+            <div id="languages-box" class="additional-box" style="display: none;">
+                <form>
+
+                    <button type="submit">Salvar</button>
+                    <button type="button" class="close-box">Fechar</button>
+                </form>
+            </div>
+
+            <div id="notification-box" class="additional-box" style="display: none;">
+               <form>
+
+                    <button type="submit">Salvar</button>
+                    <button type="button" class="close-box">Fechar</button>
+                </form>
+            </div>
+
+            <div id="integration-box" class="additional-box" style="display: none;">
+                <!-- Content for "Languages" box -->
+                <form>
+
+                    <button type="submit">Salvar</button>
+                    <button type="button" class="close-box">Fechar</button>
+                </form>
+            </div>
+
+            <div id="security-box" class="additional-box" style="display: none;">
+                <form>
+
+                    <button type="submit">Salvar</button>
+                    <button type="button" class="close-box">Fechar</button>
+                </form>
+            </div>
+            
+            <div id="acessi-box" class="additional-box" style="display: none;">
+                <!-- Content for "Languages" box -->
+                <form>
+
+                    <button type="submit">Salvar</button>
+                    <button type="button" class="close-box">Fechar</button>
+                </form>
+            </div>
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Bruno</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="Imagens/361350828_821246702820575_4265328400129953631_n.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Opções de Relatórios</h2>
+                    <span class="material-icons-sharp toggle-btn" onclick="toggleSettings()">
+                        tune
+                    </span>
+                </div>
+            
+                <div class="settings-content" style="display: none;">
+                    <div class="notification">
+                        <div class="icon">
+                            <span  id="manageProfile"  class="material-icons-sharp">
+                                design_services
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <h3>Setor de Design</h3>
+                                <small class="text_muted">
+                                    Editar
+                                </small>
+                            </div>
+                            <span id="manageProfile" class="material-icons-sharp">
+                                add
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="notification deactive">
+                        <div class="icon">
+                            <span id="languages" class="material-icons-sharp">
+                                developer_board
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <h3>Setor de T.I</h3>
+                                <small class="text_muted">
+                                    Editar
+                                </small>
+                            </div>
+                            <span id="languages" class="material-icons-sharp">
+                                add
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="notification deactive">
+                        <div class="icon">
+                            <span id="notification" class="material-icons-sharp">
+                                currency_exchange
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <h3>Setor de Vendas</h3>
+                                <small class="text_muted">
+                                    Editar
+                                </small>
+                            </div>
+                            <span id="notification" class="material-icons-sharp">
+                                add
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="notification">
+                        <div class="icon">
+                            <span id="integration" class="material-icons-sharp">
+                                tty
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <h3>Setor Administrativo</h3>
+                                <small class="text_muted">
+                                    Editar
+                                </small>
+                            </div>
+                            <span id="integration" class="material-icons-sharp">
+                                add
+                            </span>
+                        </div>
+                    </div>
+            
+                    <div class="notification">
+                        <div class="icon">
+                            <span id="security" class="material-icons-sharp">
+                                receipt_long
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <h3>Setor de Contábil</h3>
+                                <small class="text_muted">
+                                    Editar
+                                </small>
+                            </div>
+                            <span id="security" class="material-icons-sharp">
+                                add
+                            </span>
+                        </div>
+                    </div>
+                    <div class="notification deactive">
+                        <div class="icon">
+                            <span id="acessi" class="material-icons-sharp">
+                                data_saver_on
+                            </span>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <h3>Adicionar setor</h3>
+                                <small class="text_muted">
+                                    Editar
+                                </small>
+                            </div>
+                            <span id="acessi" class="material-icons-sharp">
+                                add
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Adicione quantos botões de configurações extras desejar -->
+                </div>
+            </div>
+    </div>
+    <script src="Links.js"></script>
+    <script src="Index.js"></script>
+    <script>
+        function toggleSettings() {
+            var settingsContent = document.querySelector('.settings-content');
+            settingsContent.style.display = (settingsContent.style.display === 'none' || settingsContent.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const integrationForm = document.querySelector('#integration-box form');
+            const permissionsManagement = document.querySelector('#permissions-management ul');
+    
+            integrationForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+    
+                const apiKey = document.querySelector('#apiKey').value;
+                const selectedPermission = document.querySelector('#permissions').value;
+    
+                // Salve suas configurações (simulação)
+                console.log('Configurações salvas:');
+                console.log('Chave da API:', apiKey);
+                console.log('Permissão:', selectedPermission);
+    
+                // Adicione a permissão à lista de gerenciamento
+                addPermissionToList(selectedPermission);
+            });
+    
+            function addPermissionToList(permission) {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <span>${permission}</span>
+                    <button class="revoke-permission">Revogar</button>
+                `;
+    
+                permissionsManagement.appendChild(listItem);
+    
+                // Adicione um ouvinte de evento para o botão de revogação
+                const revokeButton = listItem.querySelector('.revoke-permission');
+                revokeButton.addEventListener('click', function () {
+                    // Remova a permissão da lista (simulação)
+                    console.log('Permissão revogada:', permission);
+                    listItem.remove();
+                });
+            }
+        });
+    </script>
+    
+    
+</body>
+
+</html>
