@@ -948,72 +948,64 @@ html{
     .right-section .options #int {
         background-color: var(--color-warning);
     }
-    
 
     @media screen and (max-width: 1200px) {
-        .container{
+        .container {
             width: 95%;
             grid-template-columns: 7rem auto 23rem;
         }
-
-        aside .logo h2{
+    
+        aside .toggle .logo h2,
+        aside .sidebar h3 {
             display: none;
         }
-
-        aside .sidebar h3{
-            display: none;
-        }
-
-        aside .sidebar a{
+    
+        aside .sidebar a {
             width: 5.6rem;
         }
-
-        aside .sidebar a:last-child{
+    
+        aside .sidebar a:last-child {
             position: relative;
             margin-top: 1.8rem;
         }
-
-        main .analyse{
+    
+        main .folders {
             grid-template-columns: 1fr;
             gap: 0;
         }
-
-        main .new-users .user-list .user{
+    
+        main .folders > div {
             flex-basis: 40%;
         }
-
-        main .recent-orders {
+    
+        main .options .notification {
             width: 94%;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
             margin: 2rem 0 0 0.8rem;
         }
-
-        main .recent-orders table{
+    
+        main .options .notification table {
             width: 83vw;
         }
-
-        main table thead tr th:last-child,
-        main table thead tr th:first-child{
+    
+        main .options .notification table th:first-child,
+        main .options .notification table th:last-child,
+        main .options .notification table td:first-child,
+        main .options .notification table td:last-child {
             display: none;
         }
-
-        main table tbody tr td:last-child,
-        main table tbody tr td:first-child{
-            display: none;
-        }
-
     }
-
+    
     @media screen and (max-width: 768px) {
-        .container{
+        .container {
             width: 100%;
             grid-template-columns: 1fr;
             padding: 0 var(--padding-1);
         }
-
-        aside{
+    
+        aside {
             position: fixed;
             background-color: var(--color-white);
             width: 15rem;
@@ -1024,51 +1016,63 @@ html{
             display: none;
             animation: showMenu 0.4s ease forwards;
         }
-
+    
         @keyframes showMenu {
-        to{
-            left: 0;
-        } 
+            to {
+                left: 0;
+            }
         }
-
-        aside .logo{
+    
+        aside .toggle .logo {
             margin-left: 1rem;
         }
-
-        aside .logo h2{
+    
+        aside .toggle .logo h2,
+        aside .sidebar h3 {
             display: inline;
         }
-
-        aside .sidebar h3{
-            display: inline;
-        }
-
-        aside .sidebar a{
+    
+        aside .sidebar a {
             width: 100%;
             height: 3.4rem;
         }
-
-        aside .sidebar a:last-child{
+    
+        aside .sidebar a:last-child {
             position: absolute;
             bottom: 5rem;
         }
-
-        aside .toggle .close{
+    
+        aside .toggle .close {
             display: inline-block;
             cursor: pointer;
         }
-
-        main{
+    
+        main {
             margin-top: 8rem;
             padding: 0 1rem;
         }
-
-        .right-section{
+    
+        main .folders > div {
+            flex-basis: 35%;
+        }
+    
+        main .options .notification {
+            position: relative;
+            margin: 3rem 0 0 0;
+            width: 100%;
+        }
+    
+        main .options .notification table {
+            width: 100%;
+            margin: 0;
+        }
+    
+        .right-section {
             width: 94%;
             margin: 0 auto 4rem;
         }
-
-        .right-section .nav{
+    
+        .right-section .nav {
             position: fixed;
             top: 0;
             left: 0;
@@ -1081,18 +1085,18 @@ html{
             box-shadow: 0 1rem 1rem var(--color-light);
             margin: 0;
         }
-
-        .right-section .nav .dark-mode{
+    
+        .right-section .nav .dark-mode {
             width: 4.4rem;
             position: absolute;
             left: 66%;
         }
-
-        .right-section .profile .info{
+    
+        .right-section .nav .profile .info {
             display: none;
         }
-
-        .right-section .nav button{
+    
+        .right-section .nav button {
             display: inline-block;
             background-color: transparent;
             cursor: pointer;
@@ -1100,10 +1104,9 @@ html{
             position: absolute;
             left: 1rem;
         }
-
-        .right-section .nav button span{
+    
+        .right-section .nav button span {
             font-size: 2rem;
         }
-
     }
-    
+        
